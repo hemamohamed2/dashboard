@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body {
+    background-color: #001;
+    display: flex;
+    text-transform:capitalize;
+}
+
+.img-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    flex-shrink: 0;
+}
+
+.img-box img {
+    width: 100%;
+ 
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile  h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.menu{
+    background-color: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menu:hover {
+    width: 260px;
+}
+ul {
+    height: 95%;
+    list-style: none;
+    position: relative;
+}
+.active {
+    background-color: #ffffff55;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 40px;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+ul li a:hover , .data-info .box:hover,td:hover,.btn button:hover {
+    background-color: #ffffff55;
+}
+
+.log-out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out a{
+    background-color: #a00;
+}
+ul li i {
+    font-size: 30px;
+}
+
+.content {
+    width: 100%;
+    margin: 10px;
+}
+.content .title-info {
+    background-color: #0481ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-weight: 800;
+    font-size: 22px;
+    margin: 10px 0px;
+}
+.data-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .box {
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    background-color: #123;
+    border-radius: 8px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.data-info .box i {
+    font-size: 40px;
+} 
+
+.data-info .box  .data {
+    text-align: center;
+}
+.data-info .box  .data span {
+    font-size: 30px;
+}
+.btn {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+.btn button {
+    padding: 15px 20px ;
+    background-color: #123;
+    color: white;
+    border: 8px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.5s;
+    font-weight: 800;
+}
+table{
+    display: none;
+}
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+thead th{
+    background-color: #0481ff;
+    font-weight: 800;
+}
+th,td {
+    background-color: #123;
+    height: 40px;
+}
+
+table tbody tr td .price ,table tbody tr td .count{
+    padding: 6px;
+    border-radius: 6px;
+}
+table tbody tr td .price {
+    background-color: green;
+}
+table tbody tr td .count {
+    background-color: yellow;
+    color: #001;
+}
+@media (max-width:768px) {
+    .active {
+        width: 100%;
+    }
+}
